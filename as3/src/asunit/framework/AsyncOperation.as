@@ -3,7 +3,7 @@ package asunit.framework {
     
     import asunit.errors.AssertionFailedError;    
     
-    import mx.rpc.events.ResultEvent;    
+    import flash.events.Event;    
     import flash.events.TimerEvent;    
     import flash.utils.Timer;    
     
@@ -51,7 +51,7 @@ package asunit.framework {
 
         private function onTimeoutComplete(event:TimerEvent):void {
 	    if(null!=failureHandler) {
-		failureHandler(new ResultEvent('async timeout'));
+		failureHandler(new Event('async timeout'));
 	    }
             testCase.asyncOperationTimeout(this, duration, null==failureHandler);
         }
