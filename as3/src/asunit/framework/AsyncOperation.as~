@@ -3,7 +3,7 @@ package asunit.framework {
     
     import asunit.errors.AssertionFailedError;    
     
-    import mx.rpc.events.ResultEvent;    
+    import flash.events.ResultEvent;    
     import flash.events.TimerEvent;    
     import flash.utils.Timer;    
     
